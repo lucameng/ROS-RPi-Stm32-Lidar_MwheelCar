@@ -18,7 +18,7 @@
     - Ubuntu 20.04 mate  
     - ROS Noetic
 
-> If you the speed of 2GB RPi doesn't feed you well, See [Running Ubuntu Desktop on a 2GB Raspberry Pi 4](https://lucameng.github.io/Running-Ubuntu-Desktop-on-a-2GB-Raspberry-Pi-4/), which to some extent, solves the problem of low memory Raspberry PI.
+> If the speed of 2GB RPi doesn't feed you well, See [Running Ubuntu Desktop on a 2GB Raspberry Pi 4](https://lucameng.github.io/Running-Ubuntu-Desktop-on-a-2GB-Raspberry-Pi-4/), which to some extent, solves the problem of low memory Raspberry PI.
 
 ## ROS on Raspberry Pi 4B
 
