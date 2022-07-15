@@ -13,7 +13,7 @@
 
 ## robot control on STM32F405
 
-We use 4-**mecanum wheel** drive vehicle. Inverse and direct kinematics of it can be easily googled
+We use 4-**mecanum wheel**-drive vehicle. Inverse and direct kinematics of it can be easily googled
 
 Further see files under `stm32_car_control/` directory.
 
