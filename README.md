@@ -1,5 +1,23 @@
 ## A repo for 4wd mobile robot, with *Macanum Wheel*, by teamwork.
 
+- Controller:  
+    - Raspberry Pi 4B (with RAM of 2GB)
+    - STM32F405
+
+- Motor:  
+    - BLDC motor  
+    - HS-485 motor driver
+
+- Sensor:
+    - LDLIDAR: LD06
+
+- Protocol:  
+    - RS-485  
+ 
+- Test Environment  
+    - Ubuntu20.04 mate  
+    - ROS Noetic
+
 ## ROS on Raspberry Pi 4B
 
 ### Lidar SDK
@@ -13,9 +31,9 @@
 
 ## robot control on STM32F405
 
-We use 4-**mecanum-wheel**-drive vehicle. Inverse and direct kinematics of it can be easily googled
+We deploy on a 4-**mecanum-wheel**-drive vehicle. Inverse and direct kinematics can be easily googled
 
-Further see files under `stm32_car_control/` directory.
+Further info see files under `stm32_car_control/` directory.
 
 ## Communication between RPI 4B and STM32, through ROS
 
@@ -77,12 +95,12 @@ ___
 Then run `my_serial_node`.
 
 ```
-rosrun my_serial_node my_serial_node
+$v rosrun my_serial_node my_serial_node
 ```
 
 ___
 
-New 2 terminal at the same time and enter respectively(make sure `roscore` already runs):
+New 2 terminal at the same time and enter respectively(make sure `roscore` is already running):
 
 ```
 $ rosrun turtlesim turtlesim_node
@@ -97,7 +115,7 @@ Now you can send `Twists` message through the **arrow keys of your keyboard**.
 You can **also** directly publish the `cmd_vel` topic by doing:
 
 ```
-rostopic pub -r 1 turtle1/cmd_vel geometry_msgs/Twist -- '[1.0, 0, 0]' '[0, 0, 0.8]'
+$ rostopic pub -r 1 turtle1/cmd_vel geometry_msgs/Twist -- '[1.0, 0, 0]' '[0, 0, 0.8]'
 ```
 
 note that only $v_x$, $v_y$ and $\omega_z$ can be set to not zero.
