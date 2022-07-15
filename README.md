@@ -118,8 +118,5 @@ You can **also** directly publish the `cmd_vel` topic by doing:
 $ rostopic pub -r 1 turtle1/cmd_vel geometry_msgs/Twist -- '[1.0, 0, 0]' '[0, 0, 0.8]'
 ```
 
-note that only $v_x$, $v_y$ and $\omega_z$ can be set to not zero.
+Note that only $v_x$, $v_y$ and $\omega_z$ can be set to not zero.
 
----
-
-> More details coming in few days.
