@@ -13,7 +13,7 @@
 
 ## robot control on STM32F405
 
-We use 4-**mecanum wheel**-drive vehicle. Inverse and direct kinematics of it can be easily googled
+We use 4-**mecanum-wheel**-drive vehicle. Inverse and direct kinematics of it can be easily googled
 
 Further see files under `stm32_car_control/` directory.
 
@@ -97,7 +97,7 @@ Now you can send `Twists` message through the **arrow keys of your keyboard**.
 You can **also** directly publish the `cmd_vel` topic by doing:
 
 ```
-rostopic pub -r 1 turtle1/cmd_vel geometry_msgs/Twist -- '[1,0,0]' '[0,0,0.8]'
+rostopic pub -r 1 turtle1/cmd_vel geometry_msgs/Twist -- '[1.0, 0, 0]' '[0, 0, 0.8]'
 ```
 
 note that only $v_x$, $v_y$ and $\omega_z$ can be set to not zero.
