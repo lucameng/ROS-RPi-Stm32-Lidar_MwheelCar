@@ -1,7 +1,7 @@
 ## A repo for 4wd mobile robot, with *Macanum Wheel*, by teamwork.
 
 - Controller:  
-    - Raspberry Pi 4B (with RAM of 2GB)
+    - Raspberry Pi 4B (with 2GB RAM)
     - STM32F405
 
 - Motor:  
@@ -15,8 +15,10 @@
     - RS-485  
  
 - Test Environment  
-    - Ubuntu20.04 mate  
+    - Ubuntu 20.04 mate  
     - ROS Noetic
+
+> If you the speed of 2GB RPi doesn't feed you well, See [Running Ubuntu Desktop on a 2GB Raspberry Pi 4](https://lucameng.github.io/Running-Ubuntu-Desktop-on-a-2GB-Raspberry-Pi-4/)
 
 ## ROS on Raspberry Pi 4B
 
@@ -25,6 +27,8 @@
 - See [ldlidar_stl_ros](https://github.com/ldrobotSensorTeam/ldlidar_stl_ros)
 
 ### ROS-Odom
+
+Both are based on Lidar.
 
 - [laser_scan_matcher](https://github.com/CCNYRoboticsLab/scan_tools/tree/indigo/laser_scan_matcher)  
 - [rf2o_laser_odometry](https://github.com/MAPIRlab/mapir-ros-pkgs/tree/master/src/rf2o_laser_odometry)
@@ -52,7 +56,7 @@ Set baudrate in `/ros_ws/src/ros_rpi_to_stm32/my_serial_node/src/my_serial_node.
   
 ROS node is named `my_serial_node` ，which needs `serial` library. Clone [serial](https://github.com/wjwwood/serial) and place it under the same directory as `my_serial_node`.
 
-Go back to `~/ros_ws$` and compile `my_serial_node` only:
+Go back to `~/ros_ws` and compile `my_serial_node` only:
 
 ```
 $ catkin_make -DCATKIN_WHITELIST_PACKAGES="my_serial_node"
