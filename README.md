@@ -13,10 +13,14 @@
 
 ## robot control on STM32F405
 
+We use 4-**mecanum wheel** drive vehicle. Inverse and direct kinematics of it can be easily googled
+
+Further see files under `stm32_car_control/` directory.
 
 ## Communication between RPI 4B and STM32, through ROS
 
 ### MODIFY
+
 * STM32
   
 Set baudrate same as below or configure yourself.
