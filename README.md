@@ -45,7 +45,6 @@ Set baudrate same as below or configure yourself.
 ```
  115200  8bits 1stop no parity
 ```
-___
 
 * ROS node
 
@@ -69,7 +68,7 @@ Now, `my_serial_node` node is generated.
 
 ### TEST
 
-First make sure RPI serial port is set to `a+x` right, e.g.
+First make sure RPi serial port is set to `a+x` right, e.g.
 
 ```
  $sudo chmod a+x /dev/ttyAMAO
@@ -77,7 +76,6 @@ First make sure RPI serial port is set to `a+x` right, e.g.
 
 Caution: `ttyAMA0` should be set to your own serial port name, e.g. `ttyUSB0`.
 
-___
 
 Then make sure `roscore` and lidar SDK are both already turned up.
 
@@ -90,15 +88,13 @@ $ source devel/setup.bash
 
 $ roslaunch ldlidar_stl_ros ld06.launch
 ```
-___
 
 Then run `my_serial_node`.
 
 ```
-$v rosrun my_serial_node my_serial_node
+$ rosrun my_serial_node my_serial_node
 ```
 
-___
 
 New 2 terminal at the same time and enter respectively(make sure `roscore` is already running):
 
@@ -120,6 +116,6 @@ $ rostopic pub -r 1 turtle1/cmd_vel geometry_msgs/Twist -- '[1.0, 0, 0]' '[0, 0,
 
 note that only $v_x$, $v_y$ and $\omega_z$ can be set to not zero.
 
-__
+---
 
 > More details coming in few days.
