@@ -4,7 +4,7 @@
 
 ### Lidar SDK
 
-See [ldlidar_stl_ros](https://github.com/ldrobotSensorTeam/ldlidar_stl_ros)
+- See [ldlidar_stl_ros](https://github.com/ldrobotSensorTeam/ldlidar_stl_ros)
 
 ### ROS-Odom
 
@@ -29,7 +29,7 @@ ___
 
 Set baudrate in `/ros_ws/src/ros_rpi_to_stm32/my_serial_node/src/my_serial_node.cpp`, in line 80. Make sure it's the same as STM32's
   
-ROS node is named `my_serial_node` ，which needs `serial`. Clone [serial](https://github.com/wjwwood/serial) and place it under the same directory as `my_serial_node`.
+ROS node is named `my_serial_node` ，which needs `serial` library. Clone [serial](https://github.com/wjwwood/serial) and place it under the same directory as `my_serial_node`.
 
 Go back to `~/ros_ws$` and compile `my_serial_node` only:
 
@@ -66,7 +66,7 @@ $ cd ~/ros_ws
 
 $ source devel/setup.bash
 
-$ roslaunch dlidar_stl_ros ld06.launch
+$ roslaunch ldlidar_stl_ros ld06.launch
 ```
 ___
 
@@ -88,7 +88,7 @@ $ rosrun turtlesim turtlesim_node
 $ rosrun turtlesim turtle_teleop_key
 ```
 
-Now you can send `Twists` message through your **arrow keys of your keyboard**.
+Now you can send `Twists` message through the **arrow keys of your keyboard**.
 
 You can **also** directly publish the `cmd_vel` topic by doing:
 
@@ -96,6 +96,8 @@ You can **also** directly publish the `cmd_vel` topic by doing:
 rostopic pub -r 1 turtle1/cmd_vel geometry_msgs/Twist -- '[1,0,0]' '[0,0,0.8]'
 ```
 
-note that only $v_x$, $v_y$ and $\omega_z$ can be set to no zero.
+note that only $v_x$, $v_y$ and $\omega_z$ can be set to not zero.
 
-> More details coming in few weeks.
+__
+
+> More details coming in few days.
