@@ -4,7 +4,7 @@
 
 #### Lidar SDK
 
-See [LDROBOT](https://github.com/ldrobotSensorTeam/ldlidar_stl_ros)
+See [ldlidar_stl_ros](https://github.com/ldrobotSensorTeam/ldlidar_stl_ros)
 
 #### ROS-Odom
 
