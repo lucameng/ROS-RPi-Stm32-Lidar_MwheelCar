@@ -81,7 +81,7 @@ First make sure RPi serial port is set to `a+x` right, e.g.
 Caution: `ttyAMA0` should be set to your own serial port name, e.g. `ttyUSB0`.
 
 
-Then make sure `roscore` and lidar SDK are both already turned up.
+Then make sure `roscore` and lidar SDK are both already running.
 
 You can also run those nodes by `roslaunch`.
 
